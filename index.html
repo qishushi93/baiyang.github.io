@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>卖家秀</title>
+		<meta charset="utf-8" />
+		<title>页面布局</title>
+		<style type="text/css">
+		#header{
+		         float:left;
+				 height:100px;
+				 width:100%;
+				 background-color:lightblue;
+				 margin-bottom:15px;
+				}
+		
+		#left_list{
+			    float:left;
+			    height:500px;
+			    width:100%;
+			    background-color:skyblue;
+		           }		
+		
+		#important{
+				 float:right;
+				 height:500px;
+				 width:69%;
+				 background-color:lightskyblue;
+			   }
+		</style>
 	</head>
 	<body>
-		<a  style="text-align:center;"  target="ifrm"  href=https://api.uomg.com/api/rand.img3?sort=七了个三&format=images>刷新1</a>
-		<div style="position:absolute; top:100;">
-		<iframe src="" name="ifrm" id="ifrm" width="950" height="1000"></iframe>
+		<div id="header">
+			<h1 align="center">本网站仅供绮绮使用</h1>
 		</div>
-		<a href="https://api.uomg.com/api/rand.img3?sort=胖次猫&format=images" target="ifrm">刷新2</a> <!-- 链接也du可以 -->
+		<div id="left_list">
+			<h3 align="center">请输入您对打晕服务对评价：</h3>
+			<h5 align="center">
+			您打出对分数为：<select>
+			  <option value ="volvo">1分</option>
+			  <option value ="saab">2分</option>
+			  <option value="opel">3分</option>
+			  <option value="audi1">4分</option>
+			  <option value="audi2">5分</option>
+			  <option value="audi3">6分</option>
+			  <option value="audi4">7分</option>
+			  <option value="audi5">8分</option>
+			  <option value="audi6">9分</option>
+			  <option value="audi7">10分</option>
+			</select>
+		  <button type="button" onclick="alert('您的评分已提交')">提交</button>
+		  </h5>
+		</div>
+
 	</body>
 </html>
+
 
